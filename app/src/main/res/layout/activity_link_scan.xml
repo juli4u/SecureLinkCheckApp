@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="156dp"
         android:layout_height="148dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,12 +40,31 @@
         android:id="@+id/scanLinkbtn"
         android:layout_width="167dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="200dp"
         android:backgroundTint="@color/grey_blue"
         android:fontFamily="@font/coda"
         android:text="Scan"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <TextView
+        android:id="@+id/linkText"
+        android:layout_width="122dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/coda"
+        android:text="Paste the link"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scanLinkbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

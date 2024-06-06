@@ -4,6 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IfLinkUnsafe">
+    tools:context=".IfLinkUnsafe"
+    android:background="@drawable/iflinkunsafebg">
+
+    <TextView
+        android:id="@+id/infoUnsafe"
+        android:layout_width="274dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="376dp"
+        android:fontFamily="@font/coda"
+        android:text="Your link is not safe. Don’t trust the link"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/backbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="172dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/grey_blue"
+        android:fontFamily="@font/coda"
+        android:text="Back"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
