@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class IfLinkUnsafe : AppCompatActivity() {
+class InstructionPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_if_link_unsafe)
-        val backBtn = findViewById<Button>(R.id.backbtn1)
-        backBtn.setOnClickListener {
-            startActivity(Intent(this, LaunchAppSecureLinkCheck::class.java))
+        setContentView(R.layout.activity_instruction_page)
+
+        val closeButton = findViewById<Button>(R.id.closebtn)
+        closeButton.setOnClickListener {
             finish()
         }
     }

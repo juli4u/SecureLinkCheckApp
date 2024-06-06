@@ -1,8 +1,10 @@
+
 package com.example.securelinkcheckapp
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 class LaunchAppSecureLinkCheck : AppCompatActivity() {
@@ -14,5 +16,11 @@ class LaunchAppSecureLinkCheck : AppCompatActivity() {
         startScanButton.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
+
+        val instructionButton = findViewById<ImageButton>(R.id.instructBtn)
+        instructionButton.setOnClickListener {
+            startActivity(Intent(this, InstructionPage::class.java))
+        }
     }
 }
+
