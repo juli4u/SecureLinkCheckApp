@@ -12,6 +12,12 @@
         android:theme="@style/Theme.SecureLinkCheckApp"
         tools:targetApi="31">
         <activity
+            android:name=".IfLinkUnsafe"
+            android:exported="false" />
+        <activity
+            android:name=".IfLinkSafe"
+            android:exported="false" />
+        <activity
             android:name=".LinkScan"
             android:exported="false" />
         <activity
@@ -25,10 +31,10 @@
         </activity>
         <activity
             android:name=".LaunchAppSecureLinkCheck"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
